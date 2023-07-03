@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="stylesheet" href="./css/history.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+</head>
+
+<body>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <div id="header"></div>
+    <!-- <header id="ha-header" class="ha-header ha-header-large">
+        <div class="ha-header-perspective">
+            <div class="ha-header-front">
+                <h1><span>HISTORY</span></h1>
+    
+            </div>
+        </div>
+    </header> -->
+        <div class="content_wrap history_wrap " id="content-wrapper" style="visibility: visible;">
+            <div class="content_tit">
+                <strong>MODNI</strong>
+                <ul class="cont_list_btn" id="cont_list_btn">
+                    <li>
+                        <a class="link link--thebe" href="about.html">about</a>
+                    </li>
+                    <li class="active">
+                        <a class="link link--thebe" href="history.html">history</a>
+                    </li>
+                    <li >
+                        <a class="link link--thebe" href="notice.html">notice</a>
+                    </li>
+                    <li class="">
+                        <a class="link link--thebe" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="his_cont">
+                <section class="ha-waypoint" data-animate-down="ha-header-hide" data-animate-up="ha-header-small">
+                <div class="history_list wow fadeInUp " data-wow-duration="1s">
+                    <strong>2023</strong>
+                    <ul>
+                        <li>
+                            <span>01</span>
+                            <p>환상동화집 개설(네이버,유튜브)</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="history_list  wow fadeInUp " data-wow-duration="1s" >
+                    <strong>2022</strong>
+                    <ul>
+                        <li>
+                            <span>06</span>
+                            <p>호로록쇼(팟캐스트/네이버,유튜브)개설</p>
+                        </li>
+                        <li>
+                            <span>03</span>
+                            <p>모드니 유튜브 개설</p>
+                        </li>
+                        <li>
+                            <span>01</span>
+                            <p>yes 24 소설 프로젝트 [성찬-형제의별] 판매</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="history_list wow fadeInUp " data-wow-duration="1s">
+                    <strong>2021</strong>
+                    <ul>
+                        <li>
+                            <span>10</span>
+                            <p>모드니엔터테인먼트 개소</p>
+                        </li>
+                    </ul>
+                </div>
+                </section>
+
+            </div>
+        </div>
+        <!-- <section class="ha-waypoint" data-animate-down="ha-header-small" data-animate-up="ha-header-hide"></section> -->
+        <div class="iframewrap" id="iframewrap" style="visibility: hidden;">
+            <iframe src="../menu.html">
+
+            </iframe>
+        </div>
+    </div>
+    <script>
+        function handleTitleClick() {
+            var header = document.getElementById("iframewrap");
+            var main = document.getElementById("main");
+            if (main.style.visibility == 'visible') {
+                header.style.visibility = 'visible';
+                main.style.visibility = 'hidden';
+            } else {
+                header.style.visibility = 'hidden';
+                main.style.visibility = 'visible';
+            }
+        }
+    </script>
+    <script>
+        $(function () {
+            $("#header").load("../header.html");
+        });
+    </script>
+     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/waypoints.min.js"></script>
+    <script>
+        var $head = $('#ha-header');
+        var $menu = $('#header');
+        $('.ha-waypoint').each(function (i) {
+            var $el = $(this),
+                animClassDown = $el.data('animateDown'),
+                animClassUp = $el.data('animateUp');
+
+            $el.waypoint(function (direction) {
+                if (direction === 'down' && animClassDown) {
+                    $head.attr('class', 'ha-header ' + animClassDown);
+                    if ($head.hasClass("ha-header-hide") === true) {
+                        $menu.removeClass('hidden');
+                        $menu.addClass('show');
+                        
+                    }
+                    if ($head.hasClass("ha-header-hide") === false) {
+                        $menu.removeClass('show');
+                        $menu.addClass('hidden');
+                    }
+
+                }
+                else if (direction === 'up' && animClassUp) {
+                    $head.attr('class', 'ha-header ' + animClassUp);
+                    if ($head.hasClass("ha-header-hide") === true) {
+                        $menu.removeClass('hidden');
+                        $menu.addClass('show');
+
+                    }
+                }
+            }, { offset: '100%' });
+        });
+    </script> -->
+</body>
+
+</html>

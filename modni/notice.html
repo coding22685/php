@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="stylesheet" href="./css/notice.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="https://use.typekit.net/hph2pnz.css">
+</head>
+
+<body>
+        <div id="header"></div>
+        <div class="content_wrap" id="content-wrapper" style="visibility: visible;">
+            <div class="content_tit">
+                <strong>MODNI</strong>
+                <ul class="cont_list_btn" id="cont_list_btn">
+                    <li>
+                        <a class="link link--thebe" href="about.html">about</a>
+                    </li>
+                    <li >
+                        <a class="link link--thebe" href="history.html">history</a>
+                    </li>
+                    <li class="active">
+                        <a class="link link--thebe" href="notice.html">notice</a>
+                    </li>
+                    <li>
+                        <a class="link link--thebe" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="table" class="table-wrap">
+            
+            </div>
+        </div>
+        
+        <div class="iframewrap" id="iframewrap" style="visibility: hidden;">
+            <iframe src="../menu.html">
+
+            </iframe>
+        </div>
+   
+    <script>
+        function handleTitleClick() {
+            var header = document.getElementById("iframewrap");
+            var main = document.getElementById("main");
+            if (main.style.visibility == 'visible') {
+                header.style.visibility = 'visible';
+                main.style.visibility = 'hidden';
+            } else {
+                header.style.visibility = 'hidden';
+                main.style.visibility = 'visible';
+            }
+        }
+    </script>
+    <script>
+        $(function () {
+            $("#header").load("../header.html");
+            $("#table").load("notice.php");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/header.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="header">
+            <div class="logo ">
+                <img class="curser" src="../img/logo.png" onclick="location.href='../index.html'">
+            </div>
+            <div id="rightbar">
+                <div id="youtube">
+                    <img class="curser" src="../img/youtube.png"
+                        onclick="location.href='https://www.youtube.com/channel/UC9loPlDQKW5um9Idq9gaDXA';" alt="">
+                </div>
+                <div id="twitch">
+                    <img class="curser" src="../img/twitch.png"
+                        onclick="location.href='https://www.twitch.tv/tmdry159';" alt="">
+                </div>
+                <div id="instagram">
+                    <img class="curser" src="../img/instagram.png"
+                        onclick="location.href='https://www.instagram.com/modnient/';" alt="">
+                </div>
+                <div>
+                    <img class="menubar curser" id="menubar" onclick="handleTitleClick()" src="../img/menu.png" alt="">
+
+                </div>
+            </div>
+
+        </div>
+        <div id="main" style="visibility: visible;"></div>
+        <div class="iframewrap" id="iframewrap" style="visibility: hidden;">
+            <iframe src="../menu.html">
+
+            </iframe>
+        </div>
+    </div>
+    <script>
+        function handleTitleClick() {
+            var header = document.getElementById("iframewrap");
+            var main = document.getElementById("main");
+            if (main.style.visibility == 'visible') {
+                header.style.visibility = 'visible';
+                main.style.visibility = 'hidden';
+            } else {
+                header.style.visibility = 'hidden';
+                main.style.visibility = 'visible';
+            }
+        }
+
+    </script>
+</body>
+
+</html>

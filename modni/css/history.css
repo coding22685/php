@@ -1,0 +1,130 @@
+.his_cont {
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.his_cont .history_list {
+    position: relative;
+    padding-left: 190px;
+    margin-top: 84px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.his_cont .history_list:first-child {
+    margin-top: 0;
+}
+
+.his_cont .history_list.on {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1s ease-out;
+}
+
+.his_cont .history_list strong {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+    font-size: 18px;
+    color: #21252C;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+}
+
+.history_list ul li {
+    position: relative;
+    padding-left: 58px;
+    margin-top: 20px;
+}
+
+.history_list ul li p {
+    font-family: Pretendard, "Noto Sans SC", sans-serif;
+    font-size: 14px;
+    color: #646B76;
+    font-weight: 400;
+}
+
+.history_list ul li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-size: 14px;
+    color: #646B76;
+    font-weight: 700;
+}
+
+.history_wrap {
+    padding-bottom: 140px;
+}
+
+@media screen and (max-width: 1024px) {
+    .his_cont {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+.content_tit {
+    margin-bottom: 60px;
+}
+    .his_cont .history_list {
+        position: relative;
+        padding-left: 0;
+        margin-top: 64px;
+    }
+
+    .his_cont .history_list:first-child {
+        margin-top: 0;
+    }
+
+    .his_cont .history_list strong {
+        display: block;
+        position: relative;
+        top: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+        letter-spacing: -0.23px;
+    }
+
+    .history_list ul li:first-child {
+        margin-top: 0;
+    }
+
+    .history_list ul li {
+        position: relative;
+        padding-left: 58px;
+        margin-top: 16px;
+    }
+
+    .history_wrap {
+        padding: 100px 15px 72px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .his_cont {
+        padding: 0;
+    }
+
+    .his_cont .history_list strong {
+        font-size: 16px;
+    }
+
+    .history_list ul li {
+        position: relative;
+        padding-left: 58px;
+        margin-top: 16px;
+    }
+
+    .history_list ul li:first-child {
+        margin-top: 0;
+    }
+
+    .history_wrap {
+        padding: 94px 15px 80px;
+    }
+}

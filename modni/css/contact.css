@@ -1,0 +1,152 @@
+.loc-cont strong {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-size: 18px;
+    color: #21252C;
+    font-weight: 700;
+}
+
+.loc-add {
+    position: relative;
+    padding-right: 280px;
+}
+
+
+.loc-add p {
+    position: relative;
+    margin-left: 30px;
+    padding-left: 34px;
+    font-size: 14px;
+    color: #646B76;
+    letter-spacing: -0.32px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.loc-add i {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 22px;
+    height: 20px;
+    background-size: 22px 20px;
+}
+
+.loc-cont {
+    overflow: hidden;
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.loc-add span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 150px;
+    padding-left: 28px;
+    font-size: 14px;
+    color: #646B76;
+    letter-spacing: -0.28px;
+    font-weight: 400;
+    vertical-align: top;
+    line-height: 2;
+}
+
+.content_tit {
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.loc-map {
+    width: 100%;
+    height: 500px;
+    margin: 40px 0 120px;
+}
+.loc-map iframe{
+    width: 100%;
+    height: 500px;
+}
+
+@media screen and (max-width: 1024px) {
+    .loc-cont {
+        width: 100%;
+        padding: 0 32px;
+        box-sizing: border-box;
+    }
+
+    .content_tit strong {
+        font-size: 28px;
+    }
+
+    .contacts_wrap {
+        padding: 100px 0 72px;
+    }
+
+    .content_tit {
+        margin-bottom: 70px;
+    }
+
+    .loc-add {
+        padding-right: 0;
+    }
+
+    .loc-add p {
+        margin-left: 36px;
+    }
+
+
+    .loc-add span {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-left: 36px;
+        margin-top: 16px;
+        padding-left: 34px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .loc-cont {
+        display: block;
+        padding: 0 15px;
+    }
+    .loc-map{
+        height: 100%;
+    }
+    .content_tit {
+        margin-bottom: 60px;
+    }
+
+    .content_tit strong {
+        font-size: 22px;
+
+    }
+
+    .content_tit {
+        margin-bottom: 90px;
+        text-align: center;
+    }
+
+    .loc-cont strong {
+        margin-left: 15px;
+    }
+
+    .loc-add {
+        margin-top: 18px;
+    }
+
+    .loc-add p {
+        margin-left: 0px;
+        font-size: 14px;
+    }
+
+    .loc-add span {
+        margin-left: 0px;
+        font-size: 14px;
+    }
+}

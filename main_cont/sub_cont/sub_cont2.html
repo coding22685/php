@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="../../css/swiper-bundle.min.css" />
+<style>
+    .subSwiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .subSwiper .swiper-slide {
+        font-size: 18px;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 30px;
+    }
+
+    .subSwiper p {
+        color: black;
+    }
+    .subSwiper span{
+        margin-top: 20px; 
+        align-items: center;
+    }
+    .subSwiper img {
+        width: 100px;
+    }
+</style>
+<div class="swiper subSwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <Strong>
+                [모드니 심야 호러 토크쇼 Horror~록쇼!]
+            </Strong>
+            <p>
+                오싹오싹 하면서 무섭고 스릴러가 느껴지는 미스터리 이야기를 듣고 싶지 않으신가요?
+                사람의 실제 경험담을 토대로 현직 무속인이 여러분들에게
+                순도 100 프로의 무서운 이야기를 전달하겠습니다.
+                여러분들의 미스터리와 공포의 세계로 안내 해드리겠습니다.
+            </p>
+            <p>
+                방송 시간 : 매주 토요일 밤 22:00부터 ~
+                방송 보는 곳
+            </p>
+            <p>
+
+            </p>
+            <span>
+                <img class="curser" src="/img/twitch.png" onclick="location.href='https://www.twitch.tv/becky0922';" alt="">
+            </span>
+        </div>
+    </div>
+    <div class="swiper-scrollbar"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="../../js/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".subSwiper", {
+        direction: "vertical",
+        slidesPerView: "auto",
+        freeMode: true,
+        scrollbar: {
+            el: ".swiper-scrollbar",
+        },
+        mousewheel: true,
+    });
+</script>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/css/scrollbar.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration-line: none;
+        }
+
+        body {
+            overflow-y: hidden;
+            -webkit-text-size-adjust: none;
+        }
+
+
+        #wrapper {
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            background-color: #333333;
+        }
+        .menu_tit strong {
+                display: block;
+                position: relative;
+                font-size: 22px;
+                color: #F7F7F7;
+                font-weight: 700;
+                
+            }
+            .menu_tit a {
+                color: white;
+                font-size: 22px;
+                position: relative;
+                font-weight: 700;
+                padding: 0 27px 0;
+                z-index: 2;
+                cursor: pointer;
+                background-color: #333333;
+            }
+            .menu_wrap:first-child a{
+                padding-left: 0;
+            }
+
+        @media screen and (min-width: 1024px) {
+            #menulist::before {
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: 62px;
+                z-index: 1;
+                width: 80%;
+                height: 1px;
+                background-color: #707070;
+
+            }
+
+            div.menu_wrap:first-child .menu_item {
+                padding-left: 0;
+            }
+
+            div.menu_wrap:first-child .menu_tit {
+                padding-left: 0;
+            }
+
+            .menu_wrap {
+                float: left;
+                padding-right: 230px;
+                box-sizing: border-box;
+            }
+
+            .menu_wrap:last-child {
+                padding-right: 0;
+            }
+
+            .menu_item {
+                padding-left: 27px;
+            }
+
+
+            #menulist {
+                overflow: hidden;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                max-width: 1404px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0 62px;
+                box-sizing: border-box;
+                transform: translate(-50%, -50%);
+            }
+
+            
+
+            .tit_wrap {
+                margin-bottom: 20px;
+                position: relative;
+                background-color: #333333;
+
+            }
+
+            li a {
+                color: #888888;
+                font-size: 16px;
+                font-weight: 400;
+
+            }
+
+            .menu_item li {
+
+                margin-bottom: 15px;
+            }
+
+            
+        }
+
+
+        @media screen and (max-width: 1392px) {
+            .menu_list::before {
+                width: 68%;
+            }
+
+            .menu_wrap {
+                padding-right: 90px;
+            }
+        }
+
+        @media screen and (max-width: 1170px) {
+            .menu_list {
+                max-width: 1170px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            body {
+                min-height: 100%;
+            }
+
+            #wrapper {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                padding: 0;
+            }
+
+            .menu_tit strong {
+                display: block;
+                position: relative;
+                font-size: 18px;
+            }
+
+            #menulist {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                margin-top: 0;
+                padding: 70px 0 0 15px;
+            }
+
+            .menu_wrap {
+                float: none;
+                width: 100%;
+                margin: 0;
+                padding-right: 0;
+                margin-top: 26px;
+                transform: translate(0, 0);
+            }
+
+
+            .menu_tit a {
+                font-size: 18px;
+                padding: 0 27px 0 0;
+                position: relative;
+                background-color: #333333;
+                text-size-adjust: auto;
+            }
+
+            li a {
+                font-size: 14px;
+                text-size-adjust: auto
+            }
+
+            #menulist>.menu_wrap>.tit_wrap:before {
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: #707070;
+            }
+
+            .menu_tit strong {
+                font-size: 18px;
+                position: relative;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            .menu_tit a {
+
+                color: white;
+            }
+
+            .tit_wrap {
+                margin-bottom: 10px;
+                position: relative;
+
+            }
+
+            li a {
+                color: #888888;
+                font-size: 14px;
+                font-weight: 400;
+
+            }
+
+            .menu_item li {
+
+                margin-bottom: 8px;
+            }
+        }
+
+
+        ul {
+            list-style: none;
+        }
+
+        .curser {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <div id="menulist">
+            <div class="menu_wrap">
+                <div class="tit_wrap">
+                    <div class="menu_tit">
+                        <strong>
+                            <a class="curser" href="index.html" target="_parent">HOME</a>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_wrap">
+                <div class="tit_wrap">
+                    <div class="menu_tit">
+                        <strong>
+                            <a class="curser" href="./modni/about.html" target="_parent">MODNI</a>
+                        </strong>
+                    </div>
+                </div>
+
+                <div class="menu_item">
+                    <ul>
+                        <li><a href="./modni/about.html" target="_parent">ABOUT MODNI</a>
+
+                        </li>
+                        <li>
+                            <a href="./modni/history.html" target="_parent">HISTORY</a>
+                        </li>
+                        <li>
+                            <a href="./modni/notice.html" target="_parent">NOTICE</a>
+                        </li>
+                        <li>
+                            <a href="./modni/contact.html" target="_parent">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu_wrap">
+                <div class="tit_wrap">
+                    <div class="menu_tit">
+                        <strong>
+                            <a class="curser" href="./Departments/Illustrator.html" target="_parent">Departments</a>
+                        </strong>
+                    </div>
+                </div>
+                <div class="menu_item">
+                    <ul>
+                        <li><a href="./Departments/Radio.html" target="_parent">Radio</a>
+
+                        </li>
+                        <li><a href="./Departments/Voiceacting.html" target="_parent">Voice acting</a>
+
+                        </li>
+                        <li><a href="./Departments/Writer.html" target="_parent">Writer</a>
+
+                        </li>
+                        <li><a href="./Departments/Videoediting.html" target="_parent">Video editing</a>
+
+                        </li>
+                        <li><a href="./Departments/Illustrator.html" target="_parent">Illustrator</a>
+
+                        </li>
+                        <li><a href="./Departments/Logistics.html" target="_parent">Logistics</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu_wrap">
+                <div class="tit_wrap">
+                    <div class="menu_tit">
+                        <strong>
+                            <a class="curser" href="./Recruit/Recruit.html" target="_parent">Recruit</a>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

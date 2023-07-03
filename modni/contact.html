@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/hph2pnz.css">
+    <link rel="stylesheet" href="../css/animate.css" />
+</head>
+
+<body>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+        <div id="header"></div>
+        <div class="content_wrap contacts_wrap" id="content-wrapper" style="visibility: visible;">
+            <div class="content_tit">
+                <strong>MODNI</strong>
+                <ul class="cont_list_btn" id="cont_list_btn">
+                    <li>
+                        <a class="link link--thebe" href="about.html">about</a>
+                    </li>
+                    <li>
+                        <a class="link link--thebe" href="history.html">history</a>
+                    </li>
+                    <li>
+                        <a class="link link--thebe" href="notice.html">notice</a>
+                    </li>
+                    <li class="active">
+                        <a class="link link--thebe" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact_cont wow fadeInUp " data-wow-duration="1s">
+                <div class="loc-cont">
+                    <strong>
+                        MODNI CENTER
+                    </strong>
+                    <div class="loc-add">
+
+                        <p><i class="bi bi-map"></i>
+                            경기도 광명시 일직로 43 (일직동, MODNI CENTER) 우)14353
+                            <br>
+                            43, Iljik-ro, Gwangmyeong-si, Gyeonggi-do, Republic of Korea
+                        </p>
+                        <span>
+                            <i class="bi bi-telephone"></i>
+                            010-2049-4643
+                        </span>
+                    </div>
+                </div>
+                <div class="loc-map wow fadeInUp " data-wow-duration="1s">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.603745052791!2d126.8843303760569!3d37.42283987207615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6141cacb5239%3A0xe613497491289716!2z6rK96riw64-EIOq0keuqheyLnCDsnbzsp4HroZwgNDM!5e0!3m2!1sko!2skr!4v1683013503780!5m2!1sko!2skr"
+                        style="border:0; width: 100%;" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="iframewrap" id="iframewrap" style="visibility: hidden;">
+            <iframe src="../menu.html">
+
+            </iframe>
+        </div>
+        <style>
+            a {
+                text-decoration: none;
+            }
+
+            ul.cont_list_btn {
+                margin-bottom: 0;
+            }
+        </style>
+    
+    <script>
+        function handleTitleClick() {
+            var header = document.getElementById("iframewrap");
+            var main = document.getElementById("main");
+            if (main.style.visibility == 'visible') {
+                header.style.visibility = 'visible';
+                main.style.visibility = 'hidden';
+            } else {
+                header.style.visibility = 'hidden';
+                main.style.visibility = 'visible';
+            }
+        }
+
+    </script>
+    <script>
+        $(function () {
+            $("#header").load("../header.html");
+        });
+    </script>
+</body>
+
+</html>

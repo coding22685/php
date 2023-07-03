@@ -1,0 +1,44 @@
+<div id="container" class="container intro-effect-fadeout">
+    <div>
+            <img src="img/main1.jpg" />
+            <!-- onclick="window.open('https://www.youtube.com/channel/UC9loPlDQKW5um9Idq9gaDXA')"  -->
+            <!-- <div class="main_banner_wrap">
+                <div class="main_banner_cont">
+                    <p>목요일 오후 7시</p>
+                    <strong>연애상담소</strong>
+                    <span class="mb_line">
+                        </span>
+                        </div>
+                        </div> -->
+
+                 
+        </div>
+        <button class="trigger" data-info="Click to see the header effect"><span>Trigger</span></button>
+        <article class="content">
+            <div id="sub-title">멤버 소개</div><iframe id="cha" src="./main_cont/cha/cha1.html">
+            </iframe>
+        </article>
+
+  
+</div>
+
+<script src="../js/swiper.js"></script>
+<script>
+    var swiper = new Swiper(".content2", {
+        direction: "vertical",
+        speed: 1000,
+        slidesPerView: 1,
+        mousewheel: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+<link rel="stylesheet" href="../css/main_cont.css" />
+<script>
+    $(function () {
+
+        $("#sub_cont1").load("/main_cont/sub_cont/sub_cont1.html");
+    });
+</script>
